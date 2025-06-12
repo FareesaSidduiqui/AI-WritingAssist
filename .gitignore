@@ -1,5 +1,7 @@
 # Backend environment variables
 backend/.env
+backend/firebaseServiceAccount.json
+
 
 # Node modules
 backend/node_modules/
