@@ -1,0 +1,27 @@
+# Backend environment variables
+backend/.env
+
+# Node modules
+backend/node_modules/
+frontend/node_modules/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Build outputs
+frontend/build/
+backend/dist/
+
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Optional: Ignore test coverage
+coverage/
+
+# Optional: Ignore uploads/temp folders
+uploads/
+tmp/
