@@ -7,7 +7,8 @@ const asyncWrap = require('../utils/asyncWrap');
 router.post(
   '/',
   asyncWrap(async (req, res) => {
-    const { text } = req.body;
+    try {
+        const { text } = req.body;
 
     const response = await axios.post(
       'https://openrouter.ai/api/v1/chat/completions',
@@ -39,6 +40,11 @@ router.post(
     const corrected = response.data.choices[0].message.content.trim();
     res.json({ corrected });
     console.log('Corrected sentence:', corrected);
+    } catch (error) {
+    console.error("Error in grammar route:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+  
   })
 );
 
