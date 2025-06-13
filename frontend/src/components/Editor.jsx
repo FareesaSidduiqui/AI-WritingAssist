@@ -46,7 +46,7 @@ export default function Editor() {
 
   const checkGrammar = async () => {
     try {
-      const response = await axios.post("http://localhost:8000/api/grammer", {
+      const response = await axios.post("https://ai-assist-backend.onrender.com/grammer", {
         text,
       });
       setGrammarCheckedText(response.data.corrected);
