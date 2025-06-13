@@ -7,7 +7,7 @@ const port = process.env.PORT || 8000
 
 app.use(cors({
   credentials:true,
-origin: 'http://localhost:5173'
+origin: 'https://ai-writingassist-frontend.onrender.com'
 }))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
