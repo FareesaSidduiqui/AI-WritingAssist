@@ -3,7 +3,7 @@ import {BrowserRouter, Route ,Routes,Navigate} from 'react-router-dom'
 import './App.css'
 import About from './components/About'
 import Editor from './components/Editor'
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Login from './components/Login'
 import { ToastContainer, toast } from 'react-toastify';
