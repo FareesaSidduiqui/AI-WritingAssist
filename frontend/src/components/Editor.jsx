@@ -20,7 +20,7 @@ export default function Editor() {
 
   const rephraseSentence = async () => {
     try {
-      const response = await axios.post("http://localhost:8000/api/analyze", {
+      const response = await axios.post("https://ai-assist-backend.onrender.com/analyze", {
         sentence: selectedSentence,
       });
       setRephrasedSentences(response.data.rephrased);
@@ -35,7 +35,7 @@ export default function Editor() {
 
   const checkSpelling = async () => {
     try {
-      const response = await axios.post("http://localhost:8000/api/spell", {
+      const response = await axios.post("https://ai-assist-backend.onrender.com/spell", {
         text,
       });
       setSpellCheckedText(response.data.corrected);
