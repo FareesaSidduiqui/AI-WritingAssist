@@ -12,7 +12,7 @@ router.post(
     const response = await axios.post(
       'https://openrouter.ai/api/v1/chat/completions',
       {
-        model: 'openai/gpt-4',
+        model: 'mistralai/mistral-7b-instruct',  // ✅ FREE model
         messages: [
           {
             role: 'system',
