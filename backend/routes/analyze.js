@@ -30,7 +30,7 @@ router.post('/', asyncWrap( async (req, res) => {
         },
         {
           headers: {
-            'Authorization': `Bearer ${process.env.OPENROUTER_APIKEY}`,
+            'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
             'Content-Type': 'application/json',
             'HTTP-Referer': 'http://localhost:8000',
             'X-Title': 'my-rephraser-app'
