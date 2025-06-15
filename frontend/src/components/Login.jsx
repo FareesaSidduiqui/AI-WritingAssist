@@ -67,7 +67,7 @@ const handleEmailAuth = async (e) => {
 
     if (isNewUser) {
       await axios.post(
-        "http://localhost:8000/api/auth/reg",
+        "https://ai-assist-backend.onrender.com/api/auth/reg",
         { token: tokenID },
         {
           headers: {
@@ -104,7 +104,7 @@ const handleGoogleLogin = async () => {
 
     if (isNewUser) {
       await axios.post(
-        "http://localhost:8000/api/auth/reg",
+        "https://ai-assist-backend.onrender.com/api/auth/reg",
         { token: tokenID },
         {
           headers: {
